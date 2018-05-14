@@ -12,7 +12,7 @@ import cnn_tower_with_ps as cnn_tower
 
 BATCH_SIZE = 2
 NUM_WORKERS = 128
-NUM_FLOCKING_WORKERS = 30
+NUM_FLOCKING_WORKERS = 40
 ATTRACTION = 0.1
 REPULSION = 0.0
 
@@ -76,18 +76,18 @@ def main():
                     batch_x, batch_y = mnist.train.next_batch(batch_size=BATCH_SIZE)
                     batch_n = np.reshape(batch_x, [-1, 28, 28, 1])
                     _, loss_value = sess.run([train_op, loss], feed_dict={x: batch_n, y: batch_y})
-                    if i%200 == 0:
+                    if i%2000 == 0:
                         f.write(str(loss_value) + ' ')
                         print('step is %d, tower_%d, loss is %.3f' % (i, FLAGS.task_index, loss_value))
                 end_time = time.time()
-                print('time is', end_time - start_time)
+                print('this is worker_%d, time is' % FLAGS.task_index, end_time - start_time)
                 print('num in tf.trainable_variables is', len(tf.trainable_variables()))
                 f.close()
                 test_x, test_y = mnist.test.next_batch(batch_size=10000)
                 test_n = np.reshape(test_x, [-1, 28, 28, 1])
                 lo, accu = sess.run([loss, accuracy], feed_dict={x:test_n, y:test_y})
-                print("\n\nloss of test dataset is: ",lo)
-                print("accuracy of test dataset is: %.3f\n\n"%accu)
+                print("\n\nthis is worker_%d loss of test dataset is: %.3f"%(FLAGS.task_index,lo))
+                print("this is worker_%d, accuracy of test dataset is: %.3f\n\n" % (FLAGS.task_index, accu))
                 server.join()
 
 
