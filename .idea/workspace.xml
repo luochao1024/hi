@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a8e0b5f-5641-4d4c-8bf5-af6bd148e885" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/mnist noncenter with ps/flocking method/cnn_flocking_method.py" beforeDir="false" afterPath="$PROJECT_DIR$/mnist noncenter with ps/flocking method/cnn_flocking_method.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mnist noncenter with ps/centralized method with ps/cnn_synchronous_method.py" beforeDir="false" afterPath="$PROJECT_DIR$/mnist noncenter with ps/centralized method with ps/cnn_synchronous_method.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mnist noncenter with ps/centralized method with ps/onecommand.sh" beforeDir="false" afterPath="$PROJECT_DIR$/mnist noncenter with ps/centralized method with ps/onecommand.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mnist noncenter with ps/flocking method/onecommand.sh" beforeDir="false" afterPath="$PROJECT_DIR$/mnist noncenter with ps/flocking method/onecommand.sh" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,16 +58,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="init_same_variables.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mnist noncenter with ps/flocking method/init_same_variables.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="onecommand.sh" pinned="false" current-in-tab="true">
+      <file leaf-file-name="onecommand.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mnist noncenter with ps/flocking method/onecommand.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="5" column="98" lean-forward="true" selection-start-line="5" selection-start-column="98" selection-end-line="5" selection-end-column="98" />
+            <state relative-caret-position="48">
+              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cnn_synchronous_method.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mnist noncenter with ps/centralized method with ps/cnn_synchronous_method.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -80,11 +88,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="onecommand.sh" pinned="false" current-in-tab="false">
+      <file leaf-file-name="onecommand.sh" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mnist noncenter with ps/centralized method with ps/onecommand.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="48">
+              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -97,12 +105,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mnist noncenter with ps/centralized method with ps/cnn_synchronous_method.py" />
-        <option value="$PROJECT_DIR$/mnist noncenter with ps/centralized method with ps/onecommand.sh" />
         <option value="$PROJECT_DIR$/mnist noncenter with ps/centralized method with ps/start.sh" />
         <option value="$PROJECT_DIR$/mnist noncenter with ps/flocking method/start.sh" />
         <option value="$PROJECT_DIR$/mnist noncenter with ps/flocking method/cnn_flocking_method.py" />
         <option value="$PROJECT_DIR$/mnist noncenter with ps/flocking method/onecommand.sh" />
+        <option value="$PROJECT_DIR$/mnist noncenter with ps/centralized method with ps/cnn_synchronous_method.py" />
+        <option value="$PROJECT_DIR$/mnist noncenter with ps/centralized method with ps/onecommand.sh" />
       </list>
     </option>
   </component>
@@ -229,25 +237,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mnist noncenter with ps/centralized method with ps/cnn_synchronous_method.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="18" column="6" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mnist noncenter with ps/flocking method/init_same_variables.txt">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mnist noncenter with ps/centralized method with ps/onecommand.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mnist noncenter with ps/flocking method/start.sh">
       <provider selected="true" editor-type-id="text-editor">
@@ -256,25 +247,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mnist noncenter with ps/flocking method/cnn_tower_with_ps.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/mnist noncenter with ps/flocking method/command.sh">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/mnist noncenter with ps/flocking method/command1.sh">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mnist noncenter with ps/flocking method/init_same_variables.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mnist noncenter with ps/flocking method/flocking_optimizer.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/mnist noncenter with ps/flocking method/cnn_flocking_method.py">
@@ -287,10 +263,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mnist noncenter with ps/flocking method/cnn_tower_with_ps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mnist noncenter with ps/flocking method/flocking_optimizer.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mnist noncenter with ps/flocking method/init_same_variables.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mnist noncenter with ps/flocking method/onecommand.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="98" lean-forward="true" selection-start-line="5" selection-start-column="98" selection-end-line="5" selection-end-column="98" />
+        <state relative-caret-position="48">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mnist noncenter with ps/centralized method with ps/cnn_synchronous_method.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mnist noncenter with ps/centralized method with ps/onecommand.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
         </state>
       </provider>
     </entry>
