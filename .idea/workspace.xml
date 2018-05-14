@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8a8e0b5f-5641-4d4c-8bf5-af6bd148e885" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/mnist noncenter with ps/flocking method/cnn_flocking_method.py" beforeDir="false" afterPath="$PROJECT_DIR$/mnist noncenter with ps/flocking method/cnn_flocking_method.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mnist noncenter with ps/flocking method/onecommand.sh" beforeDir="false" afterPath="$PROJECT_DIR$/mnist noncenter with ps/flocking method/onecommand.sh" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,7 +14,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="cnn_flocking_method.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="cnn_flocking_method.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mnist noncenter with ps/flocking method/cnn_flocking_method.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="106">
@@ -61,11 +62,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="onecommand.sh" pinned="false" current-in-tab="false">
+      <file leaf-file-name="onecommand.sh" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mnist noncenter with ps/flocking method/onecommand.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="2" column="132" selection-start-line="2" selection-start-column="132" selection-end-line="2" selection-end-column="132" />
+            <state relative-caret-position="120">
+              <caret line="5" column="98" lean-forward="true" selection-start-line="5" selection-start-column="98" selection-end-line="5" selection-end-column="98" />
             </state>
           </provider>
         </entry>
@@ -99,9 +100,9 @@
         <option value="$PROJECT_DIR$/mnist noncenter with ps/centralized method with ps/cnn_synchronous_method.py" />
         <option value="$PROJECT_DIR$/mnist noncenter with ps/centralized method with ps/onecommand.sh" />
         <option value="$PROJECT_DIR$/mnist noncenter with ps/centralized method with ps/start.sh" />
-        <option value="$PROJECT_DIR$/mnist noncenter with ps/flocking method/onecommand.sh" />
         <option value="$PROJECT_DIR$/mnist noncenter with ps/flocking method/start.sh" />
         <option value="$PROJECT_DIR$/mnist noncenter with ps/flocking method/cnn_flocking_method.py" />
+        <option value="$PROJECT_DIR$/mnist noncenter with ps/flocking method/onecommand.sh" />
       </list>
     </option>
   </component>
@@ -248,13 +249,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mnist noncenter with ps/flocking method/onecommand.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="132" selection-start-line="2" selection-start-column="132" selection-end-line="2" selection-end-column="132" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mnist noncenter with ps/flocking method/start.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -290,6 +284,13 @@
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mnist noncenter with ps/flocking method/onecommand.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="98" lean-forward="true" selection-start-line="5" selection-start-column="98" selection-end-line="5" selection-end-column="98" />
         </state>
       </provider>
     </entry>
