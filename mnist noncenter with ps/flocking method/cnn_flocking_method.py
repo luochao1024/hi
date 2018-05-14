@@ -11,7 +11,7 @@ from tensorflow.examples.tutorials.mnist import input_data
 import cnn_tower_with_ps as cnn_tower
 
 BATCH_SIZE = 2
-NUM_WORKERS = 128
+NUM_WORKERS = 50
 NUM_FLOCKING_WORKERS = 10
 ATTRACTION = 0.01
 REPULSION = 0.0
@@ -21,9 +21,8 @@ def main():
     port = 9000
     log_dir = './flocking_noncenter_%.3f_%.3f_%s_r0.01' % (ATTRACTION, REPULSION, FLAGS.task_index)
     cluster = tf.train.ClusterSpec({
-        'ps': ['gc-ps:%d' % port],
-        'worker': ['gc0:%d' % (port + i + 1) for i in range(NUM_WORKERS//2)] +
-                  ['gc1:%d' % (port + i + 1) for i in range(NUM_WORKERS//2)]
+        'ps': ['localhost:%d' % port],
+        'worker': ['localhost:%d' % (port + i + 1) for i in range(NUM_WORKERS)]
     })
     config = tf.ConfigProto(
         intra_op_parallelism_threads=1,
