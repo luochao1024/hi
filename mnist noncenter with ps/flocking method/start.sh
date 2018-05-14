@@ -1,4 +1,4 @@
 git pull origin master
-source command.sh
+source onecommand.sh
 
 
