@@ -6,17 +6,16 @@ import time
 import numpy as np
 import argparse
 
-NUM_WORKERS = 128
+NUM_WORKERS = 50
 NUM_PS = 1
-BATCH_SIZE = 1
+BATCH_SIZE = 2
 
 
 def main():
     port = 24454
     cluster = tf.train.ClusterSpec({
-        'ps': ['gc-ps:%d' % port],
-        'worker': ['gc0:%d' % (port + i + 1) for i in range(NUM_WORKERS // 2)] +
-                  ['gc1:%d' % (port + i + 1) for i in range(NUM_WORKERS // 2)]
+        'ps': ['localhost:%d' % port],
+        'worker': ['localhost:%d' % (port + i + 1) for i in range(NUM_WORKERS)]
     })
     if FLAGS.job_name == 'ps':
         with tf.device('/job:ps/task:0/cpu:0'):
