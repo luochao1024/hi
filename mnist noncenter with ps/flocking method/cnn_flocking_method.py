@@ -62,7 +62,7 @@ def main():
 
             init = tf.global_variables_initializer()
             local_init = tf.local_variables_initializer()
-            print('this is local variables', tf.local_variables())
+            print('this is local variables', tf.global_variables())
             # scaffold = tf.train.Scaffold(init_op=init)
             # merged = tf.summary.merge_all()
             train_op = opt.minimize_with_flocking(loss=loss, flocking_workers=flocking_workers)
