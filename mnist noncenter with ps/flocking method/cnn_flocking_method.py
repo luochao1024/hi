@@ -60,14 +60,15 @@ def main():
                                     attraction=ATTRACTION,
                                     repulsion=REPULSION)
 
-            init = tf.initialize_all_variables()
-            local_init = tf.local_variables_initializer()
-            print('this is local variables', tf.global_variables())
+
             # scaffold = tf.train.Scaffold(init_op=init)
             # merged = tf.summary.merge_all()
             train_op = opt.minimize_with_flocking(loss=loss, flocking_workers=flocking_workers)
             # stop_hook = tf.train.StopAtStepHook(last_step=5000)
             # summary_hook = tf.train.SummarySaverHook(save_steps=10, output_dir=log_dir, summary_op=merged)
+            init = tf.global_variables_initializer()
+            local_init = tf.local_variables_initializer()
+            print('this is local variables', tf.global_variables())
 
             f = open('./flocking_noncenter_%.3f_%.3f_%s_r0.01.txt' % (ATTRACTION, REPULSION, FLAGS.task_index), 'w')
             with tf.Session(target=server.target) as sess:
