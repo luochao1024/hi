@@ -61,6 +61,7 @@ def main():
                                     repulsion=REPULSION)
 
             init = tf.global_variables_initializer()
+            print(tf.local_variables())
             # scaffold = tf.train.Scaffold(init_op=init)
             # merged = tf.summary.merge_all()
             train_op = opt.minimize_with_flocking(loss=loss, flocking_workers=flocking_workers)
