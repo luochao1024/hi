@@ -67,12 +67,11 @@ def main():
             # stop_hook = tf.train.StopAtStepHook(last_step=5000)
             # summary_hook = tf.train.SummarySaverHook(save_steps=10, output_dir=log_dir, summary_op=merged)
             init = tf.global_variables_initializer()
-            local_init = tf.local_variables_initializer()
             print('this is local variables', tf.global_variables())
 
             f = open('./flocking_noncenter_%.3f_%.3f_%s_r0.01.txt' % (ATTRACTION, REPULSION, FLAGS.task_index), 'w')
             with tf.Session(target=server.target) as sess:
-                sess.run([init, local_init])
+                sess.run(init)
                 start_time = time.time()
                 for i in range(1001):
                     batch_x, batch_y = mnist.train.next_batch(batch_size=BATCH_SIZE)
