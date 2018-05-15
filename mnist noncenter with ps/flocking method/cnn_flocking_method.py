@@ -60,7 +60,7 @@ def main():
                                     attraction=ATTRACTION,
                                     repulsion=REPULSION)
 
-            init = tf.global_variables_initializer()
+            init = tf.initialize_all_variables()
             local_init = tf.local_variables_initializer()
             print('this is local variables', tf.global_variables())
             # scaffold = tf.train.Scaffold(init_op=init)
