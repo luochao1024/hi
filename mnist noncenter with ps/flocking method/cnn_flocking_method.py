@@ -10,7 +10,7 @@ from flocking_optimizer import FlockingOptimizer
 from tensorflow.examples.tutorials.mnist import input_data
 import cnn_tower_with_ps as cnn_tower
 
-BATCH_SIZE = 2
+BATCH_SIZE = 1
 NUM_WORKERS = 32
 NUM_FLOCKING_WORKERS = 8
 ATTRACTION = 0.5
@@ -55,7 +55,7 @@ def main():
             # tf.summary.scalar('loss', loss)
             # tf.summary.scalar('accuracy', accuracy)
 
-            sgd_opt = tf.train.GradientDescentOptimizer(0.01)
+            sgd_opt = tf.train.MomentumOptimizer(0.01, momentum=0.99)
             opt = FlockingOptimizer(opt=sgd_opt,
                                     attraction=ATTRACTION,
                                     repulsion=REPULSION)
