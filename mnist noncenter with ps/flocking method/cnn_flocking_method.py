@@ -61,6 +61,7 @@ def main():
                                     repulsion=REPULSION)
 
             init = tf.global_variables_initializer()
+            local_init = tf.local_variables_initializer()
             print(tf.local_variables())
             # scaffold = tf.train.Scaffold(init_op=init)
             # merged = tf.summary.merge_all()
@@ -70,7 +71,7 @@ def main():
 
             f = open('./flocking_noncenter_%.3f_%.3f_%s_r0.01.txt' % (ATTRACTION, REPULSION, FLAGS.task_index), 'w')
             with tf.Session(target=server.target) as sess:
-                sess.run(init)
+                sess.run([init, local_init])
                 start_time = time.time()
                 for i in range(1001):
                     batch_x, batch_y = mnist.train.next_batch(batch_size=BATCH_SIZE)
