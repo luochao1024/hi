@@ -93,7 +93,7 @@ def tower(images, flocking_towers, tower_index):
                                     trainable=False,
                                     collections=[tf.GraphKeys.GLOBAL_VARIABLES,
                                                  '%s_tower_%d' % (SHARED_VARIABLES_COLLECTION, index)])
-                b = tf.get_variable('biases', shape=[32], initializer=tf.constant_initializer(0.0),
+                b = tf.get_variable('tower%d_biases' % index, shape=[32], initializer=tf.constant_initializer(0.0),
                                     trainable=False,
                                     collections=[tf.GraphKeys.GLOBAL_VARIABLES,
                                                  '%s_tower_%d' % (SHARED_VARIABLES_COLLECTION, index)])
@@ -125,7 +125,7 @@ def tower(images, flocking_towers, tower_index):
                                     trainable=False,
                                     collections=[tf.GraphKeys.GLOBAL_VARIABLES,
                                                  '%s_tower_%d' % (SHARED_VARIABLES_COLLECTION, index)])
-                b = tf.get_variable('biases', shape=[64], initializer=tf.constant_initializer(0.0),
+                b = tf.get_variable('tower%d_biases' % index, shape=[64], initializer=tf.constant_initializer(0.0),
                                     trainable=False,
                                     collections=[tf.GraphKeys.GLOBAL_VARIABLES,
                                                  '%s_tower_%d' % (SHARED_VARIABLES_COLLECTION, index)])
@@ -159,7 +159,7 @@ def tower(images, flocking_towers, tower_index):
                                     trainable=False,
                                     collections=[tf.GraphKeys.GLOBAL_VARIABLES,
                                                  '%s_tower_%d' % (SHARED_VARIABLES_COLLECTION, index)])
-                b = tf.get_variable('biases', shape=[100], initializer=tf.constant_initializer(0.0),
+                b = tf.get_variable('tower%d_biases' % index, shape=[100], initializer=tf.constant_initializer(0.0),
                                     trainable=False,
                                     collections=[tf.GraphKeys.GLOBAL_VARIABLES,
                                                  '%s_tower_%d' % (SHARED_VARIABLES_COLLECTION, index)])
@@ -190,7 +190,7 @@ def tower(images, flocking_towers, tower_index):
                                     trainable=False,
                                     collections=[tf.GraphKeys.GLOBAL_VARIABLES,
                                                  '%s_tower_%d' % (SHARED_VARIABLES_COLLECTION, index)])
-                b = tf.get_variable('biases', shape=[10], initializer=tf.constant_initializer(0.0),
+                b = tf.get_variable('tower%d_biases' % index, shape=[10], initializer=tf.constant_initializer(0.0),
                                     trainable=False,
                                     collections=[tf.GraphKeys.GLOBAL_VARIABLES,
                                                  '%s_tower_%d' % (SHARED_VARIABLES_COLLECTION, index)])
