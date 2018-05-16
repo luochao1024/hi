@@ -58,7 +58,7 @@ def main():
                                                    hooks=[sync_replicas_hook, stop_hook]) as sess:
                 f = open('./cen_logdir_%s_%s.txt' % (FLAGS.job_name, FLAGS.task_index), 'w')
                 start_time = time.time()
-                for i in range(3000):
+                for i in range(1000):
                     if sess.should_stop():
                         end_time = time.time()
                         print('time is', end_time - start_time)
@@ -78,7 +78,7 @@ def main():
                             f.write(str(loss_value)+' ')
                             print('step is %d, tower_%d, loss is: %.4f' % (i, FLAGS.task_index, loss_value))
 
-                        if i == 2999:
+                        if i == 999:
                             end_time = time.time()
                             print('time is', end_time - start_time)
                             test_x, test_y = mnist.test.next_batch(batch_size=10000)
