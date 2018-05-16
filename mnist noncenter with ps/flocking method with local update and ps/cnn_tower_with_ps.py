@@ -84,10 +84,10 @@ def tower(images, flocking_towers, tower_index):
     # the tower_index is at the end of flocking_towers, so that the weights and biases used latter is
     # the ones placed on the local tower
 
-    with tf.variable_scope('tower%d_conv1' % tower_index):
+    with tf.variable_scope('conv1'):
         for index in flocking_towers:
             with tf.device('/job:ps/task:0'):
-                w = tf.get_variable('weights',
+                w = tf.get_variable('tower%d_weight' % index,
                                     shape=[5, 5, 1, 32],
                                     initializer=init1,
                                     trainable=False,
@@ -116,10 +116,10 @@ def tower(images, flocking_towers, tower_index):
     pool1 = tf.nn.max_pool(conv1, ksize=[1, 2, 2, 1], strides=[1, 2, 2, 1], padding='SAME', name='pool1')
 
     # conv2
-    with tf.variable_scope('tower%d_conv2' % index):
+    with tf.variable_scope('conv2'):
         for index in flocking_towers:
             with tf.device('/job:ps/task:0'):
-                w = tf.get_variable('weights',
+                w = tf.get_variable('tower%d_weight' % index,
                                     shape=[5, 5, 32, 64],
                                     initializer=init2,
                                     trainable=False,
@@ -150,10 +150,10 @@ def tower(images, flocking_towers, tower_index):
                            padding='SAME', name='pool2')
 
     # fully connected layer
-    with tf.variable_scope('tower%d_fully_conn' % index):
+    with tf.variable_scope('fully_conn'):
         for index in flocking_towers:
             with tf.device('/job:ps/task:0'):
-                w = tf.get_variable('weights',
+                w = tf.get_variable('tower%d_weight' % index,
                                     shape=[7 * 7 * 64, 100],
                                     initializer=init3,
                                     trainable=False,
@@ -181,10 +181,10 @@ def tower(images, flocking_towers, tower_index):
     # drop_out = tf.nn.dropout(fully_conn, keep_prob=0.5)
 
     # logits layer
-    with tf.variable_scope('tower%d_logits' % index):
+    with tf.variable_scope('logits'):
         for index in flocking_towers:
             with tf.device('/job:ps/task:0'):
-                w = tf.get_variable('weights',
+                w = tf.get_variable('tower%d_weight' % index,
                                     shape=[100, 10],
                                     initializer=init4,
                                     trainable=False,
