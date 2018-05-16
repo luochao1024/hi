@@ -132,7 +132,7 @@ def train():
             end = time.time()
             print('elapsed time is', end-start)
             print('attraction is', ATTRACTION, 'repulsion is', REPULSION)
-
+        server.join()
 
 def main(argv=None):  # pylint: disable=unused-argument
     FLAGS.train_dir = FLAGS.train_dir + str(FLAGS.task_index)
