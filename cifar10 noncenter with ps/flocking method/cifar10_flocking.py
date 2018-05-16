@@ -284,7 +284,7 @@ def inference(images, flocking_workers):
     #         softmax_linear = tf.add(tf.matmul(local4, weights), biases, name=scope.name)
     #         _activation_summary(softmax_linear)
 
-    with tf.device(tf.train.replica_device_setter(ps_tasks=1, ps_device='/job:ps/task:0/cpu:0')):
+    with tf.device(tf.train.replica_device_setter(ps_tasks=1, ps_device='/job:ps/task:0')):
         with tf.variable_scope('conv1') as scope:
             for i in flocking_workers:
                 kernel = tf.Variable(name='w1_worker_%d' % i,
