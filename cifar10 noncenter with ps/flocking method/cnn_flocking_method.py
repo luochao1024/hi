@@ -118,7 +118,7 @@ def train():
             init = tf.global_variables_initializer()
 
 
-        f = open('./flocking_noncenter_%.3f_%.3f_%s_%s_r0.01.txt' % (ATTR, REPU, FLAGS.job_name, FLAGS.task_index), 'w')
+        f = open('./flocking_noncenter_%.3f_%.3f_%s_%s_r0.01.txt' % (ATTRACTION, REPULSION, FLAGS.job_name, FLAGS.task_index), 'w')
         with tf.Session(target=server.target) as sess:
             start = time.time()
             sess.run(init)
