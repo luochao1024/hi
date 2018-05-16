@@ -58,7 +58,7 @@ def main():
                                                    hooks=[sync_replicas_hook, stop_hook]) as sess:
                 f = open('./cen_logdir_%s_%s.txt' % (FLAGS.job_name, FLAGS.task_index), 'w')
                 start_time = time.time()
-                for i in range(10000):
+                for i in range(3000):
                     if sess.should_stop():
                         end_time = time.time()
                         print('time is', end_time - start_time)
