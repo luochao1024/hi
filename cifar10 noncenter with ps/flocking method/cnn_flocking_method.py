@@ -26,8 +26,8 @@ tf.app.flags.DEFINE_boolean('log_device_placement', True,
 tf.app.flags.DEFINE_integer('log_frequency', 10,
                             """How often to log results to the console.""")
 
-NUM_WORKERS = 32
-NUM_FLOCKING_WORKERS = 8
+NUM_WORKERS = 2
+NUM_FLOCKING_WORKERS = 1
 ATTRACTION = 0.5
 REPULSION = 3.0
 
