@@ -6,9 +6,9 @@ import time
 import numpy as np
 import argparse
 
-NUM_WORKERS = 32
+NUM_WORKERS = 40
 NUM_PS = 1
-BATCH_SIZE = 1
+BATCH_SIZE = 2
 
 
 def main():
