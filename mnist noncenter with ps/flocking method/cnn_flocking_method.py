@@ -12,7 +12,7 @@ import cnn_tower_with_ps as cnn_tower
 
 BATCH_SIZE = 2
 NUM_WORKERS = 32
-NUM_FLOCKING_WORKERS = 8
+NUM_FLOCKING_WORKERS = 7
 ATTRACTION = 0.5
 REPULSION = 3.0
 
@@ -37,7 +37,7 @@ def main():
                                  task_index=FLAGS.task_index)
         choices = [i for i in range(NUM_WORKERS) if i != FLAGS.task_index]
         print('this is in worker %d' % FLAGS.task_index, choices)
-        flocking_workers = random.sample(choices, NUM_FLOCKING_WORKERS-1)
+        flocking_workers = random.sample(choices, NUM_FLOCKING_WORKERS)
         flocking_workers.append(FLAGS.task_index)
         flocking_workers = tuple(flocking_workers)
         print('this is in worker %d' % FLAGS.task_index, flocking_workers)

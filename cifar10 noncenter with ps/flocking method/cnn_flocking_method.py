@@ -26,7 +26,7 @@ tf.app.flags.DEFINE_boolean('log_device_placement', True,
 tf.app.flags.DEFINE_integer('log_frequency', 10,
                             """How often to log results to the console.""")
 
-NUM_WORKERS = 2
+NUM_WORKERS = 3
 NUM_FLOCKING_WORKERS = 1
 ATTRACTION = 0.5
 REPULSION = 3.0
@@ -47,7 +47,7 @@ def train():
     else:
         choices = [i for i in range(NUM_WORKERS) if i != FLAGS.task_index]
         print('this is in worker %d' % FLAGS.task_index, choices)
-        flocking_workers = random.sample(choices, NUM_FLOCKING_WORKERS - 1)
+        flocking_workers = random.sample(choices, NUM_FLOCKING_WORKERS)
         flocking_workers.append(FLAGS.task_index)
         flocking_workers = tuple(flocking_workers)
         print('this is in worker %d' % FLAGS.task_index, flocking_workers)
