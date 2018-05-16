@@ -8,7 +8,7 @@ import argparse
 
 NUM_WORKERS = 30
 NUM_PS = 1
-BATCH_SIZE = 2
+BATCH_SIZE = 1
 
 
 def main():
