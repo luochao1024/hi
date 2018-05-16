@@ -78,7 +78,7 @@ def main():
                     batch_x, batch_y = mnist.train.next_batch(batch_size=BATCH_SIZE)
                     batch_n = np.reshape(batch_x, [-1, 28, 28, 1])
                     _, loss_value = sess.run([train_op, loss], feed_dict={x: batch_n, y: batch_y})
-                    if i%2000 == 0:
+                    if i%2 == 0:
                         f.write(str(loss_value) + ' ')
                         print('step is %d, tower_%d, loss is %.3f' % (i, FLAGS.task_index, loss_value))
                 end_time = time.time()
