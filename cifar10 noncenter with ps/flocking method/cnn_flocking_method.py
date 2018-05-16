@@ -125,6 +125,7 @@ def train():
             for step in range(1001):
                 print(step)
                 sess.run(train_op)
+                print('hello')
                 # loss_value, _ = sess.run([loss, train_op])
                 # if not step % FLAGS.log_frequency:
                 #     print('step: %d, loss is %.2f' % (step, loss_value))
