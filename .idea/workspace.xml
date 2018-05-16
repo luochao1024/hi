@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8a8e0b5f-5641-4d4c-8bf5-af6bd148e885" name="Default" comment="" />
+    <list default="true" id="8a8e0b5f-5641-4d4c-8bf5-af6bd148e885" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/cifar10 noncenter with ps/flocking method/flocking_optimizer_cifar10.py" beforeDir="false" afterPath="$PROJECT_DIR$/cifar10 noncenter with ps/flocking method/flocking_optimizer_cifar10.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,7 +16,7 @@
       <file leaf-file-name="cnn_flocking_method.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mnist noncenter with ps/flocking method/cnn_flocking_method.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="685">
+            <state relative-caret-position="-591">
               <caret line="41" column="50" lean-forward="true" selection-start-line="41" selection-start-column="50" selection-end-line="41" selection-end-column="50" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
@@ -26,7 +28,7 @@
       <file leaf-file-name="cnn_flocking_method.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cifar10 noncenter with ps/flocking method/cnn_flocking_method.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
+            <state relative-caret-position="680">
               <caret line="102" column="10" lean-forward="true" selection-start-line="102" selection-start-column="10" selection-end-line="102" selection-end-column="10" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
@@ -43,8 +45,11 @@
       <file leaf-file-name="flocking_optimizer_cifar10.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cifar10 noncenter with ps/flocking method/flocking_optimizer_cifar10.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1020">
-              <caret line="113" column="57" selection-start-line="113" selection-start-column="43" selection-end-line="113" selection-end-column="57" />
+            <state relative-caret-position="427">
+              <caret line="98" lean-forward="true" selection-start-line="98" selection-end-line="98" />
+              <folding>
+                <element signature="e#8656#8695#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -612,16 +617,6 @@
     <entry file="file://$PROJECT_DIR$/cifar10 noncenter with ps/flocking method/init_same_variables.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/mnist noncenter with ps/flocking method/cnn_flocking_method.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="685">
-          <caret line="41" column="50" lean-forward="true" selection-start-line="41" selection-start-column="50" selection-end-line="41" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cifar10 noncenter with ps/flocking method/onecommand.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -631,8 +626,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cifar10 noncenter with ps/flocking method/cnn_flocking_method.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
+        <state relative-caret-position="680">
           <caret line="102" column="10" lean-forward="true" selection-start-line="102" selection-start-column="10" selection-end-line="102" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mnist noncenter with ps/flocking method/cnn_flocking_method.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-591">
+          <caret line="41" column="50" lean-forward="true" selection-start-line="41" selection-start-column="50" selection-end-line="41" selection-end-column="50" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
@@ -641,8 +646,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cifar10 noncenter with ps/flocking method/flocking_optimizer_cifar10.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1020">
-          <caret line="113" column="57" selection-start-line="113" selection-start-column="43" selection-end-line="113" selection-end-column="57" />
+        <state relative-caret-position="427">
+          <caret line="98" lean-forward="true" selection-start-line="98" selection-end-line="98" />
+          <folding>
+            <element signature="e#8656#8695#0" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -124,10 +124,11 @@ def train():
             sess.run(init)
             for step in range(1001):
                 print(step)
-                loss_value, _ = sess.run([loss, train_op])
-                if not step % FLAGS.log_frequency:
-                    print('step: %d, loss is %.2f' % (step, loss_value))
-                    f.write(str(loss_value) + ',')
+                sess.run(train_op)
+                # loss_value, _ = sess.run([loss, train_op])
+                # if not step % FLAGS.log_frequency:
+                #     print('step: %d, loss is %.2f' % (step, loss_value))
+                #     f.write(str(loss_value) + ',')
             end = time.time()
             print('elapsed time is', end-start)
             print('attraction is', ATTRACTION, 'repulsion is', REPULSION)
