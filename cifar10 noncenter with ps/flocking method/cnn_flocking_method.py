@@ -82,6 +82,7 @@ def train():
             sgd_opt = tf.train.GradientDescentOptimizer(0.01)
             f_opt = FlockingOptimizer(
                 opt=sgd_opt,
+                flocking_workers=flocking_workers,
                 attraction=ATTRACTION,
                 repulsion=REPULSION)
 
