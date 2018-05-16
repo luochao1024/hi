@@ -1,6 +1,6 @@
-w=2
+w=32
 t=$((w-1))
-taskset -c $w-$((w+2)) python3 cnn_flocking_method.py --job_name ps --task_index 0 &
+taskset -c $w-$((w+31)) python3 cnn_flocking_method.py --job_name ps --task_index 0 &
 for ((x=0; x<$t; x++))
 do
     taskset -c $x python3 cnn_flocking_method.py  --job_name worker --task_index $x &#>/dev/null &
