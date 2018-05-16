@@ -6,9 +6,9 @@ import time
 import numpy as np
 import argparse
 
-NUM_WORKERS = 30
+NUM_WORKERS = 32
 NUM_PS = 1
-BATCH_SIZE = 1
+BATCH_SIZE = 2
 
 
 def main():
@@ -78,7 +78,7 @@ def main():
                             f.write(str(loss_value)+' ')
                             print('step is %d, tower_%d, loss is: %.4f' % (i, FLAGS.task_index, loss_value))
 
-                        if i == 999:
+                        if i == 2999:
                             end_time = time.time()
                             print('time is', end_time - start_time)
                             test_x, test_y = mnist.test.next_batch(batch_size=10000)
