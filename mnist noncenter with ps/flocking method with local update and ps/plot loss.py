@@ -1,28 +1,26 @@
 import numpy as np
-import csv
+from scipy import *
 import matplotlib.pyplot as plt
 
-with open("flocking_noncenter_1.000_3.000_worker_2_r0.1.txt", 'r') as csvfile:
-    lines1 = csv.reader(csvfile, delimiter=' ')
-    line_list1 = [e for e in lines1]
-    num_lines1 = len(line_list1)
-    cost_flocking = np.array([0.0] * num_lines1)
-    accuracy_flocking = np.array([0.0] * num_lines1)
-    for i in range(num_lines1):
-        cost_flocking[i] = line_list1[i][0]
-        accuracy_flocking[i] = line_list1[i][1]
+step = [1, 30, 60, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1500, 2000, 3000, 5000, 10000]
+test_loss = [2.303, 2.291, 2.211, 0.725, 0.382, 0.262, 0.193, 0.085, 0.064, 0.050, 0.052, 0.064]
+test_accuracy = [0.197, 0.247, 0.410, 0.794, 0.888, 0.924, 0.943, 0.976, 0.984, 0.986, 0.989, 0.985]
 
-with open("flocking_noncenter_0.000_0.000_worker_2_r0.1.txt", 'r') as csvfile:
-    lines2 = csv.reader(csvfile, delimiter=' ')
-    line_list2 = [e for e in lines2]
-    num_lines2 = len(line_list2)
-    cost_nonflocking = np.array([0.0] * num_lines2)
-    accuracy_nonflocking = np.array([0.0] * num_lines2)
-    for i in range(num_lines2):
-        cost_nonflocking[i] = line_list2[i][0]
-        accuracy_nonflocking[i] = line_list2[i][1]
+p30_flocking = polyfit(step, test_loss, 30)
+p30_centralized = polyfit(step, test_accuracy, 30)
 
-# print(cost_flocking)
+
+plt.ylim((0, 3))
+plt.xlim((0, 10000))
+plt.xlabel('time(seconds)')
+plt.ylabel('loss')
+plt.plot(x1, polyval(p30_flocking, x1), 'r')
+plt.plot(x2, polyval(p30_centralized, x2), 'b')
+plt.plot(x1, loss_flocking, 'r', alpha=0.4,)
+plt.plot(x2, loss_centralized, 'b', alpha=0.4)
+plt.legend(['flocking', 'centralized'])
+plt.show()
+
 
 
 x1 = np.linspace(0, 48, num_lines1)

@@ -41,8 +41,8 @@ def main():
             tf.summary.scalar('loss', loss)
             tf.summary.scalar('accuracy', accuracy)
 
-            #sgd_opt = tf.train.MomentumOptimizer(0.01, momentum=0.99)
-            sgd_opt = tf.train.GradientDescentOptimizer(0.01)
+            sgd_opt = tf.train.MomentumOptimizer(0.01, momentum=0.99)
+            # sgd_opt = tf.train.GradientDescentOptimizer(0.01)
             opt = tf.train.SyncReplicasOptimizer(
                 sgd_opt,
                 replicas_to_aggregate=NUM_WORKERS,
@@ -57,7 +57,7 @@ def main():
             with tf.train.MonitoredTrainingSession(master=server.target,
                                                    hooks=[sync_replicas_hook, stop_hook]) as sess:
                 f = open('./cen_logdir_%s_%s.txt' % (FLAGS.job_name, FLAGS.task_index), 'w')
-                f_test_loss_accuracy = open('./test_loss_accuracy_%s_%s.txt' % (FLAGS.job_name, FLAGS.task_index), 'w')
+                f_test_loss_accuracy = open('./momentum_test_loss_accuracy_%s_%s.txt' % (FLAGS.job_name, FLAGS.task_index), 'w')
                 start_time = time.time()
                 for i in range(100001):
                     if sess.should_stop():
