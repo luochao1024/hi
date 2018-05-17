@@ -10,7 +10,7 @@ from flocking_optimizer import FlockingOptimizer
 from tensorflow.examples.tutorials.mnist import input_data
 import cnn_tower_with_ps as cnn_tower
 
-BATCH_SIZE = 32
+BATCH_SIZE = 64
 NUM_WORKERS = 4
 NUM_FLOCKING_WORKERS = 3
 ATTRACTION = 0.001
