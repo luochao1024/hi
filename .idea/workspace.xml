@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8a8e0b5f-5641-4d4c-8bf5-af6bd148e885" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/mnist noncenter with ps/flocking method with local update and ps/cnn_flocking_method.py" beforeDir="false" afterPath="$PROJECT_DIR$/mnist noncenter with ps/flocking method with local update and ps/cnn_flocking_method.py" afterDir="false" />
-    </list>
+    <list default="true" id="8a8e0b5f-5641-4d4c-8bf5-af6bd148e885" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,8 +35,8 @@
       <file leaf-file-name="cnn_flocking_method.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mnist noncenter with ps/flocking method with local update and ps/cnn_flocking_method.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+            <state relative-caret-position="360">
+              <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -170,9 +168,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-1537" />
-    <option name="y" value="-89" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="-2388" />
+    <option name="y" value="-159" />
     <option name="width" value="2191" />
     <option name="height" value="1089" />
   </component>
@@ -233,7 +231,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.plot loss">
+  <component name="RunManager" selected="Python.init_same_variables">
     <configuration name="attr_repl_function (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="hi" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -252,7 +250,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="attr_repl_function" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="init_same_variables" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="hi" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -260,11 +258,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Desktop/project/flocking/neural networks/C/fully connected/flocking method/flocking method with rectified linear function/1200 examples as training data" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mnist noncenter with ps/flocking method with local update and ps" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/Desktop/project/flocking/neural networks/C/fully connected/flocking method/flocking method with rectified linear function/1200 examples as training data/attr_repl_function.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mnist noncenter with ps/flocking method with local update and ps/init_same_variables.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -325,19 +323,19 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.attr_repl_function" />
       <item itemvalue="Python.nondistributed_method" />
       <item itemvalue="Python.attr_repl_function (1)" />
       <item itemvalue="Python.latex plot" />
       <item itemvalue="Python.plot loss" />
+      <item itemvalue="Python.init_same_variables" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.init_same_variables" />
         <item itemvalue="Python.plot loss" />
         <item itemvalue="Python.attr_repl_function (1)" />
         <item itemvalue="Python.latex plot" />
         <item itemvalue="Python.nondistributed_method" />
-        <item itemvalue="Python.attr_repl_function" />
       </list>
     </recent_temporary>
   </component>
@@ -700,8 +698,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mnist noncenter with ps/flocking method with local update and ps/cnn_flocking_method.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+        <state relative-caret-position="360">
+          <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
