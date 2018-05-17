@@ -11,10 +11,10 @@ from tensorflow.examples.tutorials.mnist import input_data
 import cnn_tower_with_ps as cnn_tower
 
 BATCH_SIZE = 2
-NUM_WORKERS = 52
+NUM_WORKERS = 32
 NUM_FLOCKING_WORKERS = 3
 ATTRACTION = 0.5
-REPULSION = 1.8
+REPULSION = 1.6
 
 
 def main():
