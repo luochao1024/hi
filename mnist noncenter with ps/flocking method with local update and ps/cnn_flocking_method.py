@@ -13,7 +13,7 @@ import cnn_tower_with_ps as cnn_tower
 BATCH_SIZE = 64
 NUM_WORKERS = 4
 NUM_FLOCKING_WORKERS = 3
-ATTRACTION = 0.000
+ATTRACTION = 0.001
 REPULSION = 0.000
 
 
