@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8a8e0b5f-5641-4d4c-8bf5-af6bd148e885" name="Default" comment="" />
+    <list default="true" id="8a8e0b5f-5641-4d4c-8bf5-af6bd148e885" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/mnist noncenter with ps/flocking method with local update and ps/cnn_flocking_method.py" beforeDir="false" afterPath="$PROJECT_DIR$/mnist noncenter with ps/flocking method with local update and ps/cnn_flocking_method.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +43,7 @@
         <entry file="file://$PROJECT_DIR$/mnist noncenter with ps/flocking method with local update and ps/cnn_flocking_method.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="251">
-              <caret line="77" column="34" selection-start-line="77" selection-start-column="31" selection-end-line="77" selection-end-column="34" />
+              <caret line="77" column="34" selection-start-line="77" selection-start-column="34" selection-end-line="77" selection-end-column="34" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -708,7 +710,7 @@
     <entry file="file://$PROJECT_DIR$/mnist noncenter with ps/flocking method with local update and ps/cnn_flocking_method.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="251">
-          <caret line="77" column="34" selection-start-line="77" selection-start-column="31" selection-end-line="77" selection-end-column="34" />
+          <caret line="77" column="34" selection-start-line="77" selection-start-column="34" selection-end-line="77" selection-end-column="34" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
