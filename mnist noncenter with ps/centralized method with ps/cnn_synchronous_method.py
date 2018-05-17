@@ -6,7 +6,7 @@ import time
 import numpy as np
 import argparse
 
-NUM_WORKERS = 52
+NUM_WORKERS = 32
 NUM_PS = 1
 BATCH_SIZE = 2
 
