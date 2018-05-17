@@ -10,7 +10,7 @@ NUM_WORKERS = 32
 NUM_PS = 1
 BATCH_SIZE = 2
 
-
+stop = (1, 30, 60, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1500, 2000, 3000, 5000, 10000)
 def main():
     port = 24454
     cluster = tf.train.ClusterSpec({
@@ -75,7 +75,7 @@ def main():
                         batch_n = np.reshape(batch_x, [-1, 28, 28, 1])
                         loss_value, _ = sess.run([loss, train_op],
                                                  feed_dict={x: batch_n, y: batch_y})
-                        if i%30==0:
+                        if i in stop:
                             f.write(str(loss_value)+' ')
                             print('step is %d, tower_%d, loss is: %.4f' % (i, FLAGS.task_index, loss_value))
                             test_x, test_y = mnist.test.next_batch(batch_size=10000)
@@ -83,7 +83,7 @@ def main():
                             lo, accu = sess.run([loss, accuracy], feed_dict={x: test_n, y: test_y})
                             print("\n\nloss of test dataset is: ", lo)
                             print("accuracy of test dataset is: %.3f\n\n" % accu)
-                            f_test_loss_accuracy.write('step %d,%.3f,%.3f\n' %(lo, accu))
+                            f_test_loss_accuracy.write('step %d,%.3f,%.3f\n' % (i, lo, accu))
                         # if i == 0:
                         #     end_time = time.time()
                         #     print('time is', end_time - start_time)
