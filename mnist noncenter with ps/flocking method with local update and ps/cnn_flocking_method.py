@@ -75,7 +75,7 @@ def main():
             with tf.Session(target=server.target) as sess:
                 sess.run([init, init_local])
                 start_time = time.time()
-                for i in range(5000):
+                for i in range(10000):
                     batch_x, batch_y = mnist.train.next_batch(batch_size=BATCH_SIZE)
                     batch_n = np.reshape(batch_x, [-1, 28, 28, 1])
                     _, loss_value = sess.run([train_op, loss], feed_dict={x: batch_n, y: batch_y})
