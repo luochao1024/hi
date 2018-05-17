@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a8e0b5f-5641-4d4c-8bf5-af6bd148e885" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/mnist noncenter with ps/flocking method with local update and ps/cnn_flocking_method.py" beforeDir="false" afterPath="$PROJECT_DIR$/mnist noncenter with ps/flocking method with local update and ps/cnn_flocking_method.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mnist noncenter with ps/flocking method/cnn_flocking_method.py" beforeDir="false" afterPath="$PROJECT_DIR$/mnist noncenter with ps/flocking method/cnn_flocking_method.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,11 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="cnn_flocking_method.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="cnn_flocking_method.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mnist noncenter with ps/flocking method/cnn_flocking_method.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+            <state relative-caret-position="389">
+              <caret line="59" column="27" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -39,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cnn_flocking_method.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="cnn_flocking_method.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mnist noncenter with ps/flocking method with local update and ps/cnn_flocking_method.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+            <state relative-caret-position="360">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -142,11 +142,11 @@
         <option value="$PROJECT_DIR$/mnist noncenter with ps/centralized method with ps/flocking method with local update and ps/cnn_tower_with_ps.py" />
         <option value="$PROJECT_DIR$/mnist noncenter with ps/centralized method with ps/flocking method with local update and ps/flocking_optimizer.py" />
         <option value="$PROJECT_DIR$/mnist noncenter with ps/flocking method with local update and ps/cnn_tower_with_ps.py" />
-        <option value="$PROJECT_DIR$/mnist noncenter with ps/flocking method/cnn_flocking_method.py" />
         <option value="$PROJECT_DIR$/mnist noncenter with ps/centralized method with ps/onecommand.sh" />
         <option value="$PROJECT_DIR$/mnist noncenter with ps/centralized method with ps/cnn_synchronous_method.py" />
         <option value="$PROJECT_DIR$/mnist noncenter with ps/flocking method with local update and ps/onecommand.sh" />
         <option value="$PROJECT_DIR$/mnist noncenter with ps/flocking method with local update and ps/cnn_flocking_method.py" />
+        <option value="$PROJECT_DIR$/mnist noncenter with ps/flocking method/cnn_flocking_method.py" />
       </list>
     </option>
   </component>
@@ -184,7 +184,7 @@
               <item name="hi" type="b2602c69:ProjectViewProjectNode" />
               <item name="hi" type="462c0819:PsiDirectoryNode" />
               <item name="mnist noncenter with ps" type="462c0819:PsiDirectoryNode" />
-              <item name="flocking method with local update and ps" type="462c0819:PsiDirectoryNode" />
+              <item name="flocking method" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -651,30 +651,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mnist noncenter with ps/flocking method/cnn_flocking_method.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mnist noncenter with ps/centralized method with ps/onecommand.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mnist noncenter with ps/centralized method with ps/cnn_synchronous_method.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -703,8 +683,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mnist noncenter with ps/flocking method with local update and ps/cnn_flocking_method.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        <state relative-caret-position="360">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mnist noncenter with ps/centralized method with ps/cnn_synchronous_method.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mnist noncenter with ps/flocking method/cnn_flocking_method.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="59" column="27" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
