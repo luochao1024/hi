@@ -14,7 +14,7 @@ BATCH_SIZE = 2
 NUM_WORKERS = 45
 NUM_FLOCKING_WORKERS = 12
 ATTRACTION = 0.5
-REPULSION = 3.0
+REPULSION = 2.0
 
 
 def main():
@@ -55,8 +55,8 @@ def main():
             # tf.summary.scalar('loss', loss)
             # tf.summary.scalar('accuracy', accuracy)
 
-            sgd_opt = tf.train.MomentumOptimizer(0.01, momentum=0.99)
-            # sgd_opt = tf.train.GradientDescentOptimizer(0.01)
+            # sgd_opt = tf.train.MomentumOptimizer(0.01, momentum=0.99)
+            sgd_opt = tf.train.GradientDescentOptimizer(0.01)
             opt = FlockingOptimizer(opt=sgd_opt,
                                     attraction=ATTRACTION,
                                     repulsion=REPULSION)
