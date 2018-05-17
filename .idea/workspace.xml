@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8a8e0b5f-5641-4d4c-8bf5-af6bd148e885" name="Default" comment="" />
+    <list default="true" id="8a8e0b5f-5641-4d4c-8bf5-af6bd148e885" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/mnist noncenter with ps/flocking method with local update and ps/cnn_flocking_method.py" beforeDir="false" afterPath="$PROJECT_DIR$/mnist noncenter with ps/flocking method with local update and ps/cnn_flocking_method.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cnn_flocking_method.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="cnn_flocking_method.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mnist noncenter with ps/flocking method with local update and ps/cnn_flocking_method.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1848">
-              <caret line="77" column="32" selection-start-line="77" selection-start-column="32" selection-end-line="77" selection-end-column="32" />
+            <state relative-caret-position="1614">
+              <caret line="77" column="35" selection-start-line="77" selection-start-column="35" selection-end-line="77" selection-end-column="35" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -69,11 +71,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cnn_synchronous_method.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="cnn_synchronous_method.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mnist noncenter with ps/centralized method with ps/cnn_synchronous_method.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="60" column="35" selection-start-line="60" selection-start-column="35" selection-end-line="60" selection-end-column="35" />
+            <state relative-caret-position="245">
+              <caret line="80" column="3" selection-start-line="80" selection-start-column="3" selection-end-line="80" selection-end-column="3" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -142,9 +144,9 @@
         <option value="$PROJECT_DIR$/mnist noncenter with ps/flocking method with local update and ps/cnn_tower_with_ps.py" />
         <option value="$PROJECT_DIR$/mnist noncenter with ps/flocking method/cnn_flocking_method.py" />
         <option value="$PROJECT_DIR$/mnist noncenter with ps/flocking method with local update and ps/onecommand.sh" />
-        <option value="$PROJECT_DIR$/mnist noncenter with ps/flocking method with local update and ps/cnn_flocking_method.py" />
         <option value="$PROJECT_DIR$/mnist noncenter with ps/centralized method with ps/onecommand.sh" />
         <option value="$PROJECT_DIR$/mnist noncenter with ps/centralized method with ps/cnn_synchronous_method.py" />
+        <option value="$PROJECT_DIR$/mnist noncenter with ps/flocking method with local update and ps/cnn_flocking_method.py" />
       </list>
     </option>
   </component>
@@ -177,12 +179,6 @@
               <item name="hi" type="462c0819:PsiDirectoryNode" />
               <item name="mnist noncenter with ps" type="462c0819:PsiDirectoryNode" />
               <item name="centralized method with ps" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hi" type="462c0819:PsiDirectoryNode" />
-              <item name="mnist noncenter with ps" type="462c0819:PsiDirectoryNode" />
-              <item name="flocking method" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hi" type="b2602c69:ProjectViewProjectNode" />
@@ -688,16 +684,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mnist noncenter with ps/flocking method with local update and ps/cnn_flocking_method.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1848">
-          <caret line="77" column="32" selection-start-line="77" selection-start-column="32" selection-end-line="77" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mnist noncenter with ps/centralized method with ps/onecommand.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
@@ -707,8 +693,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mnist noncenter with ps/centralized method with ps/cnn_synchronous_method.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="60" column="35" selection-start-line="60" selection-start-column="35" selection-end-line="60" selection-end-column="35" />
+        <state relative-caret-position="245">
+          <caret line="80" column="3" selection-start-line="80" selection-start-column="3" selection-end-line="80" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mnist noncenter with ps/flocking method with local update and ps/cnn_flocking_method.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1614">
+          <caret line="77" column="35" selection-start-line="77" selection-start-column="35" selection-end-line="77" selection-end-column="35" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>

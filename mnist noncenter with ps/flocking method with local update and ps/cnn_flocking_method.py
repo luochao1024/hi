@@ -55,8 +55,8 @@ def main():
             # tf.summary.scalar('loss', loss)
             # tf.summary.scalar('accuracy', accuracy)
 
-            # sgd_opt = tf.train.MomentumOptimizer(0.01, momentum=0.99)
-            sgd_opt = tf.train.GradientDescentOptimizer(0.01)
+            sgd_opt = tf.train.MomentumOptimizer(0.01, momentum=0.99)
+            # sgd_opt = tf.train.GradientDescentOptimizer(0.01)
             opt = FlockingOptimizer(opt=sgd_opt,
                                     attraction=ATTRACTION,
                                     repulsion=REPULSION)
@@ -75,7 +75,7 @@ def main():
             with tf.Session(target=server.target) as sess:
                 sess.run([init, init_local])
                 start_time = time.time()
-                for i in range(10000):
+                for i in range(1000):
                     batch_x, batch_y = mnist.train.next_batch(batch_size=BATCH_SIZE)
                     batch_n = np.reshape(batch_x, [-1, 28, 28, 1])
                     _, loss_value = sess.run([train_op, loss], feed_dict={x: batch_n, y: batch_y})
