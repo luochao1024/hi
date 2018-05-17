@@ -51,7 +51,7 @@ def main():
             merged = tf.summary.merge_all()
             sync_replicas_hook = opt.make_session_run_hook(is_chief, num_tokens=0)
             train_op = opt.minimize(loss, global_step=global_step)
-            stop_hook = tf.train.StopAtStepHook(last_step=101)
+            stop_hook = tf.train.StopAtStepHook(last_step=10001)
 
             # summary_hook = tf.train.SummarySaverHook(save_steps=10, output_dir=log_dir, summary_op=merged)
             with tf.train.MonitoredTrainingSession(master=server.target,
@@ -59,7 +59,7 @@ def main():
                 f = open('./cen_logdir_%s_%s.txt' % (FLAGS.job_name, FLAGS.task_index), 'w')
                 f_test_loss_accuracy = open('./test_loss_accuracy_%s_%s.txt' % (FLAGS.job_name, FLAGS.task_index), 'w')
                 start_time = time.time()
-                for i in range(100):
+                for i in range(100001):
                     if sess.should_stop():
                         end_time = time.time()
                         print('time is', end_time - start_time)
