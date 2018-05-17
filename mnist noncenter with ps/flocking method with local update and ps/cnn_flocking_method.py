@@ -11,7 +11,7 @@ from tensorflow.examples.tutorials.mnist import input_data
 import cnn_tower_with_ps as cnn_tower
 
 BATCH_SIZE = 2
-NUM_WORKERS = 45
+NUM_WORKERS = 40
 NUM_FLOCKING_WORKERS = 4
 ATTRACTION = 0.5
 REPULSION = 2.0
@@ -55,8 +55,8 @@ def main():
             # tf.summary.scalar('loss', loss)
             # tf.summary.scalar('accuracy', accuracy)
 
-            sgd_opt = tf.train.MomentumOptimizer(0.01, momentum=0.99)
-            # sgd_opt = tf.train.GradientDescentOptimizer(0.01)
+            # sgd_opt = tf.train.MomentumOptimizer(0.01, momentum=0.99)
+            sgd_opt = tf.train.GradientDescentOptimizer(0.01)
             opt = FlockingOptimizer(opt=sgd_opt,
                                     attraction=ATTRACTION,
                                     repulsion=REPULSION)
