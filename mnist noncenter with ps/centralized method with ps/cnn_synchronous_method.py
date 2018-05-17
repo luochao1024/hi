@@ -57,6 +57,7 @@ def main():
             with tf.train.MonitoredTrainingSession(master=server.target,
                                                    hooks=[sync_replicas_hook, stop_hook]) as sess:
                 f = open('./cen_logdir_%s_%s.txt' % (FLAGS.job_name, FLAGS.task_index), 'w')
+                f_test_loss_accuracy = open('./test_loss_accuracy_%s_%s.txt' % (FLAGS.job_name, FLAGS.task_index), 'w')
                 start_time = time.time()
                 for i in range(10000):
                     if sess.should_stop():
@@ -74,18 +75,22 @@ def main():
                         batch_n = np.reshape(batch_x, [-1, 28, 28, 1])
                         loss_value, _ = sess.run([loss, train_op],
                                                  feed_dict={x: batch_n, y: batch_y})
-                        if i%200==0:
+                        if i%30==0:
                             f.write(str(loss_value)+' ')
                             print('step is %d, tower_%d, loss is: %.4f' % (i, FLAGS.task_index, loss_value))
-
-                        if i == 0:
-                            end_time = time.time()
-                            print('time is', end_time - start_time)
                             test_x, test_y = mnist.test.next_batch(batch_size=10000)
                             test_n = np.reshape(test_x, [-1, 28, 28, 1])
                             lo, accu = sess.run([loss, accuracy], feed_dict={x: test_n, y: test_y})
                             print("\n\nloss of test dataset is: ", lo)
                             print("accuracy of test dataset is: %.3f\n\n" % accu)
+                        # if i == 0:
+                        #     end_time = time.time()
+                        #     print('time is', end_time - start_time)
+                        #     test_x, test_y = mnist.test.next_batch(batch_size=10000)
+                        #     test_n = np.reshape(test_x, [-1, 28, 28, 1])
+                        #     lo, accu = sess.run([loss, accuracy], feed_dict={x: test_n, y: test_y})
+                        #     print("\n\nloss of test dataset is: ", lo)
+                        #     print("accuracy of test dataset is: %.3f\n\n" % accu)
 
 
 if __name__ == '__main__':
