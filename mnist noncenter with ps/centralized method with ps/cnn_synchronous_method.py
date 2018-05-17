@@ -51,14 +51,14 @@ def main():
             merged = tf.summary.merge_all()
             sync_replicas_hook = opt.make_session_run_hook(is_chief, num_tokens=0)
             train_op = opt.minimize(loss, global_step=global_step)
-            stop_hook = tf.train.StopAtStepHook(last_step=1001)
+            stop_hook = tf.train.StopAtStepHook(last_step=10001)
 
             # summary_hook = tf.train.SummarySaverHook(save_steps=10, output_dir=log_dir, summary_op=merged)
             with tf.train.MonitoredTrainingSession(master=server.target,
                                                    hooks=[sync_replicas_hook, stop_hook]) as sess:
                 f = open('./cen_logdir_%s_%s.txt' % (FLAGS.job_name, FLAGS.task_index), 'w')
                 start_time = time.time()
-                for i in range(1000):
+                for i in range(10000):
                     if sess.should_stop():
                         end_time = time.time()
                         print('time is', end_time - start_time)
@@ -78,7 +78,7 @@ def main():
                             f.write(str(loss_value)+' ')
                             print('step is %d, tower_%d, loss is: %.4f' % (i, FLAGS.task_index, loss_value))
 
-                        if i == 999:
+                        if i == 0:
                             end_time = time.time()
                             print('time is', end_time - start_time)
                             test_x, test_y = mnist.test.next_batch(batch_size=10000)
