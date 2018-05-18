@@ -15,7 +15,7 @@ NUM_WORKERS = 32
 NUM_FLOCKING_WORKERS = 7
 ATTRACTION = 0.5
 REPULSION = 3.0
-D = 0.001
+D = 0.0001
 
 def main():
     port = 9000
