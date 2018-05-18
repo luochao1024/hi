@@ -15,7 +15,7 @@ NUM_WORKERS = 32
 NUM_FLOCKING_WORKERS = 7
 ATTRACTION = 0.5
 REPULSION = 3.0
-
+D = 0.001
 
 def main():
     port = 9000
@@ -48,7 +48,7 @@ def main():
         with tf.device(worker_device):
             x = tf.placeholder(tf.float32, [None, 28, 28, 1], name='x')
             y = tf.placeholder(tf.float32, [None, 10], name='y')
-            logits = cnn_tower.tower(x, flocking_workers, FLAGS.task_index)
+            logits = cnn_tower.tower(x, flocking_workers, FLAGS.task_index, D)
             loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=logits, labels=y))
             correct_prediction = tf.equal(tf.argmax(logits, 1), tf.argmax(y, 1))
             accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
@@ -59,7 +59,8 @@ def main():
             sgd_opt = tf.train.GradientDescentOptimizer(0.01)
             opt = FlockingOptimizer(opt=sgd_opt,
                                     attraction=ATTRACTION,
-                                    repulsion=REPULSION)
+                                    repulsion=REPULSION,
+                                    dis=D)
 
 
             # scaffold = tf.train.Scaffold(init_op=init)

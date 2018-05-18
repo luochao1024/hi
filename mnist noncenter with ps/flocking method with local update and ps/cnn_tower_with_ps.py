@@ -1,6 +1,7 @@
 """the mnist convolutional tower"""
 import tensorflow as tf
 import numpy as np
+import random
 import csv
 
 SHARED_VARIABLES_COLLECTION = 'shared_variables'
@@ -38,17 +39,9 @@ init3 = tf.constant_initializer(w3_shaped)
 init4 = tf.constant_initializer(w4_shaped)
 
 
-def tower(images, flocking_towers, tower_index):
-    """Build the mnist convolutional tower.
+def tower(images, flocking_towers, tower_index, d):
 
-    Args:
-      images: 4D tensor of [batch_size, IMAGE_SIZE, IMAGE_SIZE, 1] size.
-      flocking_towers: a list of towers to do flocking
-
-    Returns:
-      Logits.
-    """
-
+    random.seed(tower_index)
     w1 = np.array([0.0] * 5 * 5 * 32)
     w2 = np.array([0.0] * 5 * 5 * 32 * 64)
     w3 = np.array([0.0] * 7 * 7 * 64 * 100)
@@ -59,16 +52,16 @@ def tower(images, flocking_towers, tower_index):
         l = [element for element in lines]
 
         for i in range(5 * 5 * 32):
-            w1[i] = float(l[0][i])
+            w1[i] = float(l[0][i]) + random.uniform(-d, d)
 
         for i in range(5 * 5 * 32 * 64):
-            w2[i] = float(l[1][i])
+            w2[i] = float(l[1][i]) + random.uniform(-d, d)
 
         for i in range(7 * 7 * 64 * 100):
-            w3[i] = float(l[2][i])
+            w3[i] = float(l[2][i]) + random.uniform(-d, d)
 
         for i in range(100 * 10):
-            w4[i] = float(l[3][i])
+            w4[i] = float(l[3][i]) + random.uniform(-d, d)
 
     w1_shaped = np.reshape(w1, [5, 5, 1, 32])
     w2_shaped = np.reshape(w2, [5, 5, 32, 64])
