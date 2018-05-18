@@ -55,8 +55,8 @@ def main():
             # tf.summary.scalar('loss', loss)
             # tf.summary.scalar('accuracy', accuracy)
 
-            # sgd_opt = tf.train.MomentumOptimizer(0.01, momentum=0.99)
-            sgd_opt = tf.train.GradientDescentOptimizer(0.01)
+            sgd_opt = tf.train.MomentumOptimizer(0.01, momentum=0.99)
+            # sgd_opt = tf.train.GradientDescentOptimizer(0.01)
             opt = FlockingOptimizer(opt=sgd_opt,
                                     attraction=ATTRACTION,
                                     repulsion=REPULSION,
