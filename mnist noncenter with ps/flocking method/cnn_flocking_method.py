@@ -14,7 +14,7 @@ BATCH_SIZE = 2
 NUM_WORKERS = 32
 NUM_FLOCKING_WORKERS = 7
 ATTRACTION = 0.5
-REPULSION = 0.0
+REPULSION = 3.0
 
 
 def main():
@@ -74,7 +74,7 @@ def main():
             with tf.Session(target=server.target) as sess:
                 sess.run(init)
                 start_time = time.time()
-                for i in range(1001):
+                for i in range(600):
                     batch_x, batch_y = mnist.train.next_batch(batch_size=BATCH_SIZE)
                     batch_n = np.reshape(batch_x, [-1, 28, 28, 1])
                     _, loss_value = sess.run([train_op, loss], feed_dict={x: batch_n, y: batch_y})
